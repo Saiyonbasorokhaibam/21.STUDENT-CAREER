@@ -1,0 +1,217 @@
+/* About Page Styles */
+
+.about-page {
+    padding: var(--spacing-lg) 0 var(--spacing-2xl);
+}
+
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Header */
+.about-header {
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+}
+
+.about-header h1 {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    margin-bottom: var(--spacing-md);
+}
+
+.about-intro {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Sections */
+.about-section {
+    margin-bottom: var(--spacing-2xl);
+}
+
+.about-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-lg);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+/* Info Card */
+.info-card {
+    padding: var(--spacing-lg);
+}
+
+.info-content p {
+    margin-bottom: var(--spacing-md);
+}
+
+.process-list {
+    margin-left: var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.process-list li {
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.process-list strong {
+    color: var(--text-primary);
+}
+
+/* Notice Card */
+.notice-card {
+    display: flex;
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg);
+    border-left: 4px solid var(--accent-primary);
+}
+
+.notice-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.notice-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.notice-content p {
+    line-height: 1.7;
+}
+
+.notice-content ul {
+    margin-top: var(--spacing-sm);
+    margin-left: var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.notice-content li {
+    color: var(--text-secondary);
+}
+
+/* Features Grid */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+}
+
+.feature-item {
+    text-align: center;
+    padding: var(--spacing-lg);
+}
+
+.feature-item .feature-icon {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: var(--spacing-sm);
+}
+
+.feature-item h3 {
+    font-size: 1.125rem;
+    margin-bottom: var(--spacing-xs);
+}
+
+.feature-item p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+/* Industries List */
+.industries-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.industry-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+}
+
+.industry-item .industry-icon {
+    font-size: 2rem;
+    width: 50px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.industry-info h4 {
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+}
+
+.industry-info p {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+
+/* FAQ */
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.faq-item {
+    padding: var(--spacing-lg);
+}
+
+.faq-item h4 {
+    font-size: 1.125rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--accent-primary);
+}
+
+.faq-item p {
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+/* CTA */
+.about-cta .cta-content {
+    text-align: center;
+    padding: var(--spacing-2xl);
+}
+
+.about-cta h2 {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.about-cta p {
+    margin-bottom: var(--spacing-lg);
+}
+
+/* Utility */
+.mt-md {
+    margin-top: var(--spacing-md);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .notice-card {
+        flex-direction: column;
+    }
+
+    .industry-item {
+        flex-direction: column;
+        text-align: center;
+    }
+}
